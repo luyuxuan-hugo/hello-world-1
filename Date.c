@@ -58,11 +58,17 @@ int main()
 switch(i){
 
   	case 1:printf("这一天是星期一\n");
+  	break; 
   	case 2:printf("这一天是星期二\n");
+  	break;
   	case 3:printf("这一天是星期三\n");
+  	break;
   	case 4:printf("这一天是星期四\n");
+  	break;
   	case 5:printf("这一天是星期五\n");
+  	break;
   	case 6:printf("这一天是星期六\n");
+  	break;
     default: break; 
 }
    
