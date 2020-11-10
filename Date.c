@@ -35,16 +35,19 @@ int main()
   printf(", 20%.2d.\n", year);
   int y=year;
   int d=day;
-  int w,m;
+  int m=month;
+  int w;
+  int y1;
   int i=0;
   if(m<=2){
   	m=month+12;
+  	y1=y-1; 
+  	w=y1+(y1/4)-35+26*(m+1)/10+d-1;
   }
   else {
   	m=month;
-  	
+  	w=y+(y/4)-35+26*(m+1)/10+d-1;
   }
-  w=y+(y/4)-35+26*(m+1)/10+d-1;
   if(w%7==0)
   {
   	printf("这一天是星期天"); 
